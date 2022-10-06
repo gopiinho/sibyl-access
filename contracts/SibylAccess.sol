@@ -36,7 +36,7 @@ contract SibylAccess is ERC721, Ownable {
         require(isMintEnabled, "Mint is not yet available!");
         require(totalSupply + _quantity <= maxSupply, "Max supply reached!");
         require(msg.value == _quantity * mintPrice, "Wrong Mint Value");
-        require(walletMints[msg.sender] + _quantity <= maxPerWallet, "Cannot mint more than 2!");
+        require(walletMints[msg.sender] + _quantity <= maxPerWallet, "Cannot mint more than 1!");
 
         for (uint256 i = 0; i < _quantity; i++) {
             uint256 newTokenId = totalSupply + 1;

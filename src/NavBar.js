@@ -11,4 +11,19 @@ const NavBar = ({ accounts, setAccounts }) => {
             setAccounts(accounts)
         }
     }
+
+    return (
+        <div>
+            {/* Left side div */}
+            <div>Discord</div>
+            <div>Another</div>
+
+            {/* Left side content */}
+            <div>Mint</div>
+            <div>About</div>
+
+            {/* Connect Button */}
+            {isConnected ? <p>Connected</p> : <button onClick={connectAccount}>Connect</button>}
+        </div>
+    )
 }

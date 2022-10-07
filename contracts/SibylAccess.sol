@@ -10,7 +10,7 @@ contract SibylAccess is ERC721, Ownable {
     uint256 public maxSupply;
     uint256 public maxPerWallet;
     bool public isMintEnabled;
-    address payable public withdrawWallet;
+    address payable private withdrawWallet;
 
     mapping(address => uint256) public walletMints;
 

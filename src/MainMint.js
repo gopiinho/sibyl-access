@@ -38,3 +38,5 @@ const MainMint = ({ accounts, setAccounts }) => {
         </div>
     )
 }
+
+export default MainMint

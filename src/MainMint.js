@@ -16,11 +16,25 @@ const MainMint = ({ accounts, setAccounts }) => {
             const sibylContract = new ethers.Contract(sibylAccessAddress, SibylAccess.abi, signer)
 
             try {
-                const txResponse = await sibylContract.mint(mintAmount)
+                const txResponse = await sibylContract.mint(BigNumber.from(mintAmount))
                 console.log("response :", txResponse)
             } catch (err) {
                 console.log("error: ", err)
             }
         }
     }
+
+    return (
+        <div>
+            <h1>Sibyl Access</h1>
+            <p> The Sibyl system sees it all. Become a part of it!</p>
+            {isConnected ? (
+                <div>
+                    <button onClick={mintHandler}>Get Access</button>
+                </div>
+            ) : (
+                <p>Connect to Sibyl System.</p>
+            )}
+        </div>
+    )
 }

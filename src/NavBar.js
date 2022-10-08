@@ -1,4 +1,5 @@
 import React from "react"
+import { Box, Button, Flex, Image, Link, Spacer } from "@chakra-ui/react"
 
 const NavBar = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0])

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { ethers, BigNumber } from "ethers"
+import { Box, Button, Flex, Text } from "@chakra-ui/react"
 import SibylAccess from "./SibylAccess.json"
 
 const sibylAccessAddress = ""

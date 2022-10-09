@@ -14,18 +14,30 @@ const NavBar = ({ accounts, setAccounts }) => {
     }
 
     return (
-        <div>
+        <Flex justify="space-between" align="center" padding="30px">
             {/* Left side div */}
-            <div>Discord</div>
-            <div>Another</div>
+            <Flex justify="space-around" width="40%" padding="0 75px">
+                <Link textDecoration="none" href="https://discord.com">
+                    Discord
+                </Link>
+                <Link href="https://google.com">Google</Link>
+            </Flex>
 
             {/* Left side content */}
-            <div>Mint</div>
-            <div>About</div>
+            <Flex justify="space-between" align="center" width="40%" padding="30px">
+                <Box margin="0 15px">Mint</Box>
+                <Spacer />
+                <Box margin="0 15px">About</Box>
+                <Spacer />
+            </Flex>
 
             {/* Connect Button */}
-            {isConnected ? <p>Connected</p> : <button onClick={connectAccount}>Connect</button>}
-        </div>
+            {isConnected ? (
+                <Box margin="0 15px">Connected</Box>
+            ) : (
+                <Button onClick={connectAccount}>Connect</Button>
+            )}
+        </Flex>
     )
 }
 

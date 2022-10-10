@@ -17,7 +17,9 @@ const MainMint = ({ accounts, setAccounts }) => {
             const sibylContract = new ethers.Contract(sibylAccessAddress, SibylAccess.abi, signer)
 
             try {
-                const txResponse = await sibylContract.mint(BigNumber.from(mintAmount))
+                const txResponse = await sibylContract.mint(BigNumber.from(mintAmount), {
+                    value: ethers.utils.parseEther((0.05).toString()),
+                })
                 console.log("response :", txResponse)
             } catch (err) {
                 console.log("error: ", err)

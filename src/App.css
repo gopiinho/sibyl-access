@@ -34,6 +34,7 @@ body {
   right: 0;
   bottom: 0;
   background-image: url("./assets/background/cyber.gif");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 40%;

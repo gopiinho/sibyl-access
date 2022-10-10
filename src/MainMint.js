@@ -31,14 +31,16 @@ const MainMint = ({ accounts, setAccounts }) => {
         <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
             <Box width="60%">
                 <div>
-                    <Text fontSize="48px" textShadow="0 5px #000000">
+                    <Text fontSize="48px" textShadow="0 5px #000000" paddingBottom="50">
                         SIBYL.ACCESS
                     </Text>
                     <Text
-                        fontSize="30px"
+                        fontSize="16px"
+                        color="rgba(225,225,225,0.9)"
                         letterSpacing="-5.5%"
-                        fontFamily="Orbitron"
+                        fontFamily="Press Start 2P"
                         textShadoq="0 2px 2px #000000"
+                        paddingBottom="70px"
                     >
                         The Sibyl system sees it all, only seeks the unexampled minds. Become a part
                         of the hive mind and oversee the human desires.
@@ -48,7 +50,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                 {isConnected ? (
                     <div>
                         <Button
-                            backgroundColor="#D6517D"
+                            backgroundColor="rgba(214, 81, 112, 0.75)"
                             borderRadius="5px"
                             boxShadow="0px 2px 2px 1px #0F0F0F"
                             color="white"
@@ -68,9 +70,9 @@ const MainMint = ({ accounts, setAccounts }) => {
                         letterSpacing="-5.5%"
                         fontFamily=""
                         textShadow="0 3px #000000"
-                        color="#D65170"
+                        color="rgba(214, 81, 112, 0.75)"
                     >
-                        &lt;error 404: establish connection to sibyl&gt;
+                        &lt;runtime error: establish connection to sibyl&gt;
                     </Text>
                 )}
             </Box>

@@ -40,7 +40,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                 </Box>
             ) : (
                 <Button
-                    backgroundColor="#D65170"
+                    backgroundColor="rgba(214, 81, 112, 0.75)"
                     borderRadius="5px"
                     boxShadow="0px 2px 2px 1px #0F0F0F"
                     color="white"

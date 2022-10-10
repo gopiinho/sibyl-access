@@ -17,23 +17,27 @@ const NavBar = ({ accounts, setAccounts }) => {
         <Flex justify="space-between" align="center" padding="30px">
             {/* Left side div */}
             <Flex justify="space-around" width="40%" padding="0 75px">
-                <Link textDecoration="none" href="https://discord.com">
-                    Discord
+                <Link textDecoration="none" textColor="white" href="https://discord.com">
+                    talk()
                 </Link>
-                <Link href="https://google.com">Google</Link>
+                <Link href="https://google.com" textDecoration="none" textColor="white">
+                    enter.sibyl()
+                </Link>
             </Flex>
 
             {/* Left side content */}
             <Flex justify="space-between" align="center" width="40%" padding="30px">
-                <Box margin="0 15px">Mint</Box>
+                <Box margin="0 15px">source.code()</Box>
                 <Spacer />
-                <Box margin="0 15px">About</Box>
+                <Box margin="0 15px">about.sibyl()</Box>
                 <Spacer />
             </Flex>
 
             {/* Connect Button */}
             {isConnected ? (
-                <Box margin="0 15px">Connected</Box>
+                <Box margin="0 15px" textColor="#cbd1d6">
+                    .connected
+                </Box>
             ) : (
                 <Button
                     backgroundColor="#D65170"

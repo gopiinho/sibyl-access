@@ -60,7 +60,16 @@ const MainMint = ({ accounts, setAccounts }) => {
                         </Button>
                     </div>
                 ) : (
-                    <p>Connect to Sibyl System.</p>
+                    <Text
+                        marginTop="70px"
+                        fontSize="15px"
+                        letterSpacing="-5.5%"
+                        fontFamily=""
+                        textShadow="0 3px #000000"
+                        color="#D65170"
+                    >
+                        &lt;error 404: establish connection to sibyl&gt;
+                    </Text>
                 )}
             </Box>
         </Flex>

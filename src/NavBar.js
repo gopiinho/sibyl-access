@@ -46,7 +46,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                     margin="0 15px"
                     onClick={connectAccount}
                 >
-                    Connect
+                    Connect()
                 </Button>
             )}
         </Flex>

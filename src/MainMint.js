@@ -26,17 +26,44 @@ const MainMint = ({ accounts, setAccounts }) => {
     }
 
     return (
-        <div>
-            <h1>Sibyl Access</h1>
-            <p> The Sibyl system sees it all. Become a part of it!</p>
-            {isConnected ? (
+        <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
+            <Box width="60%">
                 <div>
-                    <button onClick={mintHandler}>Get Access</button>
+                    <Text fontSize="48px" textShadow="0 5px #000000">
+                        SIBYL.ACCESS
+                    </Text>
+                    <Text
+                        fontSize="30px"
+                        letterSpacing="-5.5%"
+                        fontFamily="Orbitron"
+                        textShadoq="0 2px 2px #000000"
+                    >
+                        The Sibyl system sees it all, only seeks the unexampled minds. Become a part
+                        of the hive mind and oversee the human desires.
+                    </Text>
                 </div>
-            ) : (
-                <p>Connect to Sibyl System.</p>
-            )}
-        </div>
+
+                {isConnected ? (
+                    <div>
+                        <Button
+                            backgroundColor="#D6517D"
+                            borderRadius="5px"
+                            boxShadow="0px 2px 2px 1px #0F0F0F"
+                            color="white"
+                            cursor="pointer"
+                            fontFamily="inherit"
+                            padding="15px"
+                            marginTop="10px"
+                            onClick={mintHandler}
+                        >
+                            JOIN.SIBYL
+                        </Button>
+                    </div>
+                ) : (
+                    <p>Connect to Sibyl System.</p>
+                )}
+            </Box>
+        </Flex>
     )
 }
 

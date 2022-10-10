@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sibyl-access/static/css/main.e6c22933.css",
+    "main.js": "/sibyl-access/static/js/main.7fc85933.js",
+    "static/media/cyber.gif": "/sibyl-access/static/media/cyber.d2461be4a44d91f5c765.gif",
+    "index.html": "/sibyl-access/index.html",
+    "main.e6c22933.css.map": "/sibyl-access/static/css/main.e6c22933.css.map",
+    "main.7fc85933.js.map": "/sibyl-access/static/js/main.7fc85933.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c22933.css",
+    "static/js/main.7fc85933.js"
+  ]
+}

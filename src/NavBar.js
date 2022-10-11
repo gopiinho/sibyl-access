@@ -27,9 +27,17 @@ const NavBar = ({ accounts, setAccounts }) => {
 
             {/* Left side content */}
             <Flex justify="space-between" align="center" width="40%" padding="30px">
-                <Box margin="0 15px">source.code()</Box>
+                <Link
+                    textDecoration="none"
+                    textColor="white"
+                    href="https://github.com/igopib/sibyl-access"
+                >
+                    source.code()
+                </Link>
                 <Spacer />
-                <Box margin="0 15px">about.sibyl()</Box>
+                <Link textDecoration="none" textColor="white" href="https://discord.com">
+                    about.sibyl()
+                </Link>
                 <Spacer />
             </Flex>
 

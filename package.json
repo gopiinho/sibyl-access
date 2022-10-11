@@ -59,6 +59,7 @@
     "gh-pages": "^4.0.0",
     "hardhat": "^2.11.2",
     "hardhat-gas-reporter": "^1.0.8",
+    "react-router-dom": "^6.4.2",
     "solidity-coverage": "^0.8.0",
     "typechain": "^8.1.0"
   }

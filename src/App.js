@@ -1,21 +1,21 @@
 import { useState } from "react"
 import "./App.css"
-import MainMint from "./MainMint"
-import NavBar from "./NavBar"
+import { Routes, Route } from "react-router-dom"
+import Home from "./Home"
 import AboutSibyl from "./AboutSibyl"
-import { Route, Link } from "react-router-dom"
 
 function App() {
     const [accounts, setAccounts] = useState([])
 
     return (
-        <div className="overlay">
-            <div className="App">
-                <NavBar accounts={accounts} setAccounts={setAccounts} />
-                <MainMint accounts={accounts} setAccounts={setAccounts} />
-            </div>
-            <div className="moving-background"></div>
-        </div>
+        /* <div>
+            <h1> Test </h1> 
+            This does not work <Routes>
+                <Route path="/" element={<Home accounts={accounts} setAccounts={setAccounts} />} />
+                <Route path="/about" element={<AboutSibyl />} /> 
+            </Routes> 
+        </div>************    This does not work ***************** */
+        <Home accounts={accounts} setAccounts={setAccounts} />
     )
 }
 

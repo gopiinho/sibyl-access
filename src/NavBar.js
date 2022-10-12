@@ -35,7 +35,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                     source.code()
                 </Link>
                 <Spacer />
-                <Link textDecoration="none" textColor="white" href="https://discord.com">
+                <Link textDecoration="none" textColor="white" href="/about">
                     about.sibyl()
                 </Link>
                 <Spacer />

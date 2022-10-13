@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 
 
 .App {
@@ -7,6 +9,13 @@
   font-family: "Press Start 2P", 'Orbitron', sans-serif;
   color: white;
 }
+
+.App2 {
+  text-align: left;
+  font-family: "Press Start 2P", sans-serif, 'DotGothic16', 'VT323', monospace;
+  color: white;
+}
+
 
 * {
   box-sizing: border-box;

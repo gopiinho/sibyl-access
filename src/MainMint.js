@@ -60,7 +60,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                             marginTop="10px"
                             onClick={mintHandler}
                         >
-                            JOIN.SIBYL
+                            join.sibyl()
                         </Button>
                     </div>
                 ) : (

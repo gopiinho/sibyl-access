@@ -17,10 +17,20 @@ const NavBar = ({ accounts, setAccounts }) => {
         <Flex justify="space-between" align="center" padding="30px">
             {/* Left side div */}
             <Flex justify="space-around" width="40%" padding="0 75px">
-                <Link textDecoration="none" textColor="white" href="https://discord.com">
+                <Link
+                    textDecoration="none"
+                    textColor="white"
+                    href="https://discord.com"
+                    _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
+                >
                     talk()
                 </Link>
-                <Link href="https://google.com" textDecoration="none" textColor="white">
+                <Link
+                    href="https://google.com"
+                    textDecoration="none"
+                    textColor="white"
+                    _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
+                >
                     enter.sibyl()
                 </Link>
             </Flex>
@@ -31,11 +41,17 @@ const NavBar = ({ accounts, setAccounts }) => {
                     textDecoration="none"
                     textColor="white"
                     href="https://github.com/igopib/sibyl-access"
+                    _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
                 >
                     source.code()
                 </Link>
                 <Spacer />
-                <Link textDecoration="none" textColor="white" href="/about">
+                <Link
+                    textDecoration="none"
+                    textColor="white"
+                    href="/about"
+                    _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
+                >
                     about.sibyl()
                 </Link>
                 <Spacer />
@@ -57,8 +73,11 @@ const NavBar = ({ accounts, setAccounts }) => {
                     padding="15px"
                     margin="0 15px"
                     onClick={connectAccount}
+                    _hover={{
+                        backgroundColor: "rgba(214, 81, 112, 0.45)",
+                    }}
                 >
-                    Connect()
+                    connect()
                 </Button>
             )}
         </Flex>

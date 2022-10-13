@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/sibyl-access/static/css/main.e6c22933.css",
-    "main.js": "/sibyl-access/static/js/main.7fc85933.js",
+    "main.css": "/sibyl-access/static/css/main.01115cf0.css",
+    "main.js": "/sibyl-access/static/js/main.c7c60fca.js",
     "static/media/cyber.gif": "/sibyl-access/static/media/cyber.d2461be4a44d91f5c765.gif",
+    "static/media/cyber2.gif": "/sibyl-access/static/media/cyber2.d8c29792ffe6c2adf6ef.gif",
     "index.html": "/sibyl-access/index.html",
-    "main.e6c22933.css.map": "/sibyl-access/static/css/main.e6c22933.css.map",
-    "main.7fc85933.js.map": "/sibyl-access/static/js/main.7fc85933.js.map"
+    "main.01115cf0.css.map": "/sibyl-access/static/css/main.01115cf0.css.map",
+    "main.c7c60fca.js.map": "/sibyl-access/static/js/main.c7c60fca.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c22933.css",
-    "static/js/main.7fc85933.js"
+    "static/css/main.01115cf0.css",
+    "static/js/main.c7c60fca.js"
   ]
 }

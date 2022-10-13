@@ -59,6 +59,9 @@ const MainMint = ({ accounts, setAccounts }) => {
                             padding="15px"
                             marginTop="10px"
                             onClick={mintHandler}
+                            _hover={{
+                                backgroundColor: "rgba(214, 81, 112, 0.45)",
+                            }}
                         >
                             join.sibyl()
                         </Button>
@@ -71,6 +74,9 @@ const MainMint = ({ accounts, setAccounts }) => {
                         fontFamily=""
                         textShadow="0 3px #000000"
                         color="rgba(214, 81, 112, 0.75)"
+                        _hover={{
+                            color: "rgba(214, 81, 112, 0.55)",
+                        }}
                     >
                         &lt;runtime error: establish connection to sibyl&gt;
                     </Text>

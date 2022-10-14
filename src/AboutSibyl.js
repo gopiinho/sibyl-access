@@ -4,7 +4,7 @@ import { Box, Button, Flex, Image, Spacer, Text } from "@chakra-ui/react"
 import "./App.css"
 import NavBar from "./NavBar"
 
-function AboutSibyl() {
+export function AboutSibyl() {
     const [accounts, setAccounts] = useState([])
 
     return (

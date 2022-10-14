@@ -1,5 +1,8 @@
 import React from "react"
-import { Box, Button, Flex, Image, Link, Spacer } from "@chakra-ui/react"
+import { Box, Button, Flex, Image, Spacer } from "@chakra-ui/react"
+import { AboutSibyl } from "./AboutSibyl"
+import { Link } from "react-router-dom"
+import { Link as LinkChakra } from "@chakra-ui/react"
 
 const NavBar = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0])
@@ -17,44 +20,46 @@ const NavBar = ({ accounts, setAccounts }) => {
         <Flex justify="space-between" align="center" padding="30px">
             {/* Left side div */}
             <Flex justify="space-around" width="40%" padding="0 75px">
-                <Link
+                
+                <LinkChakra
                     textDecoration="none"
                     textColor="white"
                     href="https://discord.com"
                     _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
                 >
                     talk()
-                </Link>
-                <Link
+                </LinkChakra>
+                <LinkChakra
+                    
                     href="https://google.com"
                     textDecoration="none"
                     textColor="white"
                     _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
                 >
                     enter.sibyl()
-                </Link>
+                </LinkChakra>
             </Flex>
 
             {/* Left side content */}
             <Flex justify="space-between" align="center" width="40%" padding="30px">
-                <Link
+                <LinkChakra
                     textDecoration="none"
                     textColor="white"
                     href="https://github.com/igopib/sibyl-access"
                     _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
                 >
                     source.code()
-                </Link>
+                </LinkChakra>
                 <Spacer />
                 <Link
-                    textDecoration="none"
-                    textColor="white"
-                    href="/about"
+                style={{ textDecoration: "none", color: "white" }}
+                    to={'/about'}
                     _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
                 >
                     about.sibyl()
                 </Link>
                 <Spacer />
+                
             </Flex>
 
             {/* Connect Button */}

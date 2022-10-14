@@ -6,7 +6,7 @@ import SibylAccess from "./SibylAccess.json"
 const sibylAccessAddress = "0xdD93800B8e743Ccb7925F776992CB9541801CA0D"
 
 const MainMint = ({ accounts, setAccounts }) => {
-    const [mintAmount, setMintAmount] = useState(1)
+    const [mintAmount] = useState(1)
     const isConnected = Boolean(accounts[0])
 
     async function mintHandler() {

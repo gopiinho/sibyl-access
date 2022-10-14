@@ -1,10 +1,10 @@
 import React from "react"
 import { useState } from "react"
-import { Box, Button, Flex, Image, Spacer, Text } from "@chakra-ui/react"
+import { Box, Flex, Spacer, Text } from "@chakra-ui/react"
 import "./App.css"
 import NavBar from "./NavBar"
 
-function AboutSibyl() {
+export function AboutSibyl() {
     const [accounts, setAccounts] = useState([])
 
     return (

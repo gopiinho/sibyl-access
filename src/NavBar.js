@@ -1,6 +1,5 @@
 import React from "react"
-import { Box, Button, Flex, Image, Spacer } from "@chakra-ui/react"
-import { AboutSibyl } from "./AboutSibyl"
+import { Box, Button, Flex, Spacer } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 import { Link as LinkChakra } from "@chakra-ui/react"
 

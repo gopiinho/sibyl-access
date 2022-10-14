@@ -66,6 +66,7 @@ function AboutSibyl() {
                         textShadow="0 2px 2px #000000"
                         paddingBottom="20px"
                     >
+                        {" "}
                         Being a member of the Sibyl System is no easy task as the Officials will
                         decide who is eligible to join, and will force people they approve as
                         members to comply. Once a member is chosen, they go under an operation in

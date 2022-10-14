@@ -3,7 +3,7 @@ import { ethers, BigNumber } from "ethers"
 import { Box, Button, Flex, Text } from "@chakra-ui/react"
 import SibylAccess from "./SibylAccess.json"
 
-const sibylAccessAddress = ""
+const sibylAccessAddress = "0xdD93800B8e743Ccb7925F776992CB9541801CA0D"
 
 const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1)

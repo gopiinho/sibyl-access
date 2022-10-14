@@ -2,6 +2,7 @@ import React from "react"
 import { Box, Button, Flex, Spacer } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 import { Link as LinkChakra } from "@chakra-ui/react"
+import "./App.css"
 
 const NavBar = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0])
@@ -19,17 +20,15 @@ const NavBar = ({ accounts, setAccounts }) => {
         <Flex justify="space-between" align="center" padding="30px">
             {/* Left side div */}
             <Flex justify="space-around" width="40%" padding="0 75px">
-                
                 <LinkChakra
                     textDecoration="none"
                     textColor="white"
-                    href="https://discord.com"
+                    href="https://discord.gg/Qf9jmhbfCc"
                     _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
                 >
                     talk()
                 </LinkChakra>
                 <LinkChakra
-                    
                     href="https://google.com"
                     textDecoration="none"
                     textColor="white"
@@ -50,15 +49,10 @@ const NavBar = ({ accounts, setAccounts }) => {
                     source.code()
                 </LinkChakra>
                 <Spacer />
-                <Link
-                style={{ textDecoration: "none", color: "white" }}
-                    to={'/about'}
-                    _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
-                >
-                    about.sibyl()
-                </Link>
+                <div className="router-link">
+                    <Link to={"/about"}>about.sibyl()</Link>
+                </div>
                 <Spacer />
-                
             </Flex>
 
             {/* Connect Button */}

@@ -19,7 +19,10 @@ const NavBar = ({ accounts, setAccounts }) => {
     return (
         <Flex justify="space-between" align="center" padding="30px">
             {/* Left side div */}
-            <Flex justify="space-around" width="40%" padding="0 75px">
+            <Flex justify="space-around" width="40%" padding="0 15px">
+                <div className="router-link">
+                    <Link to={"/"}>home()</Link>
+                </div>
                 <LinkChakra
                     textDecoration="none"
                     textColor="white"

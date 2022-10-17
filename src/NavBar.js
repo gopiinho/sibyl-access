@@ -28,14 +28,9 @@ const NavBar = ({ accounts, setAccounts }) => {
                 >
                     talk()
                 </LinkChakra>
-                <LinkChakra
-                    href="https://google.com"
-                    textDecoration="none"
-                    textColor="white"
-                    _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
-                >
-                    enter.sibyl()
-                </LinkChakra>
+                <div className="router-link">
+                    <Link to={"/enter"}>enter.sibyl()</Link>
+                </div>
             </Flex>
 
             {/* Left side content */}

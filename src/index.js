@@ -2,8 +2,9 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
 import App from "./App"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { AboutSibyl } from "./AboutSibyl"
+import { EnterSibyl } from "./EnterSibyl"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
@@ -12,6 +13,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/about" element={<AboutSibyl />} />
+                <Route path="/enter" element={<EnterSibyl />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

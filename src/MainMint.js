@@ -31,7 +31,16 @@ const MainMint = ({ accounts, setAccounts }) => {
         <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
             <Box width="60%">
                 <div>
-                    <Text fontSize="48px" textShadow="0 5px #000000" paddingBottom="50">
+                    <Text
+                        fontSize="48px"
+                        textShadow="0 5px #000000"
+                        paddingBottom="50"
+                        _hover={{
+                            color: "rgba(214, 81, 112, 0.75)",
+                            textShadow: "0 5px rgba(255, 255, 255, 0.55)",
+                            cursor: "default",
+                        }}
+                    >
                         SIBYL.ACCESS
                     </Text>
                     <Text

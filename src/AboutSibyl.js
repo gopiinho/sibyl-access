@@ -20,6 +20,7 @@ export function AboutSibyl() {
                             _hover={{
                                 color: "rgba(214, 81, 112, 0.75)",
                                 textShadow: "0 5px rgba(255, 255, 255, 0.55)",
+                                cursor: "default",
                             }}
                         >
                             about.sibyl()

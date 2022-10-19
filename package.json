@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "wagmi": "^0.7.4",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -54,7 +55,7 @@
     "@typechain/hardhat": "^6.1.2",
     "chai": "^4.2.0",
     "dotenv": "^16.0.3",
-    "ethers": "^5.4.7",
+    "ethers": "^5.7.1",
     "gh-pages": "^4.0.0",
     "hardhat": "^2.11.2",
     "hardhat-gas-reporter": "^1.0.8",

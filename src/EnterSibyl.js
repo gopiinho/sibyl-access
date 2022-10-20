@@ -3,34 +3,32 @@ import { useState } from "react"
 import "./App.css"
 import NavBar from "./NavBar"
 import { useNetwork, useSwitchNetwork } from "wagmi"
+import { Box, Flex, Spacer, Text } from "@chakra-ui/react"
 
 export function EnterSibyl() {
     const [accounts, setAccounts] = useState([])
-    const { chain } = useNetwork()
-    const { chains, error, isLoading, pendingChainId, switchNetwork } =
-      useSwitchNetwork()
+    const [validMember, setValidMember] = useState([])
 
     return (
-        <div>
-      {chain && <div>Connected to {chain.name}</div>}
-
-      {chains.map((x) => (
-        <button
-          disabled={!switchNetwork || x.id === chain?.id}
-          key={x.id}
-          onClick={() => switchNetwork?.(x.id)}
-        >
-          {x.name}
-          {isLoading && pendingChainId === x.id && ' (switching)'}
-        </button>
-      ))}
-
-      <div>{error && error.message}</div>
-    </div>
-
         <div className="overlay">
             <div className="App2">
                 <NavBar accounts={accounts} setAccounts={setAccounts} />
+                <Flex justify="left" align="center" paddingLeft="130px">
+                    <Box width="50%">
+                        <Text
+                            fontSize="38px"
+                            textShadow="0 5px rgba(255, 0, 0, 0.75)"
+                            paddingBottom="10px "
+                            _hover={{
+                                color: "rgba(214, 81, 112, 0.75)",
+                                textShadow: "0 5px rgba(255, 255, 255, 0.55)",
+                                cursor: "default",
+                            }}
+                        >
+                            sibyl.member(?)
+                        </Text>
+                    </Box>
+                </Flex>
             </div>
             <div className="moving-background3"></div>
         </div>

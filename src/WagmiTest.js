@@ -1,13 +1,15 @@
 import React from "react"
 import { useState } from "react"
-import { useAccount, useConnect } from "wagmi"
+import { chain, useAccount, useConnect } from "wagmi"
+import { MetaMaskConnector } from "wagmi/connectors/metaMask"
 
 export function WagmiTest() {
-    const { connector: activeConnector, isConnected } = useAccount()
-    const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
+    const connector = new MetaMaskConnector({
+        chains: [chain.mainnet, chain.optimism],
+    })
 
     return (
-        <>
+        <div>
             {isConnected && <div>Connected to {activeConnector.name}</div>}
 
             {connectors.map((connector) => (
@@ -22,7 +24,7 @@ export function WagmiTest() {
             ))}
 
             {error && <div>{error.message}</div>}
-        </>
+        </div>
     )
 }
 

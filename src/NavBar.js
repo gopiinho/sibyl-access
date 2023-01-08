@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Box, Button, Flex, Spacer } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 import { Link as LinkChakra } from "@chakra-ui/react"
@@ -6,6 +6,7 @@ import "./App.css"
 
 const NavBar = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0])
+    const [showLink, setShowLink] = useState(false)
 
     async function connectAccount() {
         if (window.ethereum) {
@@ -37,15 +38,45 @@ const NavBar = ({ accounts, setAccounts }) => {
             </Flex>
 
             {/* Left side content */}
-            <Flex justify="space-between" align="center" width="40%" padding="30px">
-                <LinkChakra
-                    textDecoration="none"
-                    textColor="white"
-                    href="https://github.com/igopib/sibyl-access"
-                    _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
-                >
-                    source.code()
-                </LinkChakra>
+            <Flex
+                justify="space-between"
+                align="center"
+                width="40%"
+                padding="30px"
+                onMouseEnter={() => setShowLink(true)}
+                onMouseLeave={() => setShowLink(false)}
+            >
+                {showLink ? (
+                    <>
+                        <LinkChakra
+                            textDecoration="none"
+                            textColor="white"
+                            href="https://github.com/igopib/sibyl-access"
+                            _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
+                        >
+                            {" "}
+                            repo()
+                        </LinkChakra>
+                        /
+                        <LinkChakra
+                            textDecoration="none"
+                            textColor="white"
+                            href="https://github.com/igopib/"
+                            _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
+                        >
+                            creator()
+                        </LinkChakra>
+                    </>
+                ) : (
+                    <LinkChakra
+                        textDecoration="none"
+                        textColor="white"
+                        _hover={{ color: "rgba(255, 255, 255, 0.5)" }}
+                        href="#"
+                    >
+                        source.code()
+                    </LinkChakra>
+                )}
                 <Spacer />
                 <div className="router-link">
                     <Link to={"/about"}>about.sibyl()</Link>

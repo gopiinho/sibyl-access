@@ -2,11 +2,10 @@ import React from "react"
 import { useState } from "react"
 import "./App.css"
 import NavBar from "./NavBar"
-import { Box, Flex, Spacer, Text } from "@chakra-ui/react"
+import { Box, Flex, Text } from "@chakra-ui/react"
 
 export function EnterSibyl() {
     const [accounts, setAccounts] = useState([])
-    const [validMember, setValidMember] = useState([])
 
     return (
         <div className="overlay">

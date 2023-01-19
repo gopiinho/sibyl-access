@@ -5,7 +5,6 @@ import App from "./App"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { AboutSibyl } from "./AboutSibyl"
 import { EnterSibyl } from "./EnterSibyl"
-import { WagmiTest } from "./WagmiTest"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
@@ -15,7 +14,6 @@ root.render(
                 <Route path="/" element={<App />} />
                 <Route path="/about" element={<AboutSibyl />} />
                 <Route path="/enter" element={<EnterSibyl />} />
-                <Route path="/test" element={<WagmiTest />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

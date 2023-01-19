@@ -2,7 +2,6 @@ import React from "react"
 import { useState } from "react"
 import "./App.css"
 import NavBar from "./NavBar"
-import { useNetwork, useSwitchNetwork } from "wagmi"
 import { Box, Flex, Spacer, Text } from "@chakra-ui/react"
 
 export function EnterSibyl() {

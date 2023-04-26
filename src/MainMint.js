@@ -23,6 +23,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                 console.log("response :", txResponse)
             } catch (err) {
                 console.log("error: ", err)
+                alert(`Error: ${err.message}`)
             }
         }
     }
